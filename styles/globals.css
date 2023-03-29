@@ -38,3 +38,7 @@ body {
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
 }
+
+.logo__contour {
+  z-index: -1;
+}
