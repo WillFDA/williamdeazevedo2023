@@ -1,43 +1,35 @@
 import React from "react";
+import { motion } from "framer-motion";
+import IconTechnoComponents from "./IconTechnoComponents";
 
 export default function TechnoComponents(props) {
-    const { title, paragraph, icons = [] } = props;
+  const { title, paragraph, icons = [] } = props;
 
-    const hexToRGBA = (hex, alpha) => {
-        const [r, g, b] = hex.match(/\w\w/g).map((x) => parseInt(x, 16));
-        return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-    };
+  const blurBackgroundVariants = {
+    initial: { opacity: 0 },
+    hover: { opacity: 1 },
+  };
 
-    return (
-        <div className="p-10 bg-black rounded-3xl">
-            <h2 className="text-white font-semibold text-xl mb-5">
-                {title}
-            </h2>
-            <p className="text-white font-regular text-base">
-                {paragraph}
-            </p>
-            <div className="flex justify-start mt-5">
-                {icons.map((icon, index) => {
-                    const modifiedIcon = React.cloneElement(icon.component, {
-                        width: "",
-                        height: "",
-                        className: "w-8 h-8",
-                    });
-
-                    return (
-                        <div
-                            key={index}
-                            className="w-16 h-16 rounded-full flex items-center justify-center mr-4"
-                            style={{
-                                backgroundColor: hexToRGBA(icon.color, 0.1),
-                                color: icon.color,
-                            }}
-                        >
-                            {modifiedIcon}
-                        </div>
-                    );
-                })}
-            </div>
-        </div>
-    );
+  return (
+    <motion.div
+      className="p-10 bg-black rounded-3xl flex flex-col min-h-[16rem] justify-between relative overflow-hidden"
+      whileHover={{ scale: 1.02 }}
+    >
+      <motion.div
+        className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-#FF0081 via-transparent to-#00CAFF blur-lg"
+        variants={blurBackgroundVariants}
+        initial="initial"
+        whileHover="hover"
+      />
+      <div className="flex flex-col gap-4 z-10">
+        <h2 className="text-white font-semibold text-xl">{title}</h2>
+        <p className="text-white font-regular text-base">{paragraph}</p>
+      </div>
+      <div className="flex justify-start content-end z-10">
+        {icons.map((icon, index) => (
+          <IconTechnoComponents key={index} component={icon.component} color={icon.color} />
+        ))}
+      </div>
+    </motion.div>
+  );
 }

@@ -5,6 +5,7 @@ import LogoContour from '../public/LogoContour.svg'
 import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import MesTechno from './MesTechno';
+import AboutSection from './AboutSection';
 
 export default function Home() {
   return (
@@ -16,11 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <main className="font-Inter container mx-auto max-w-7xl my-10">
-        <Navbar className='z-10' />
+      <main className="font-Inter mx-auto my-10">
+        <Navbar/>
         <HeroSection/>
-        <MesTechno className='z-10' />
-        <LogoContour className='absolute top-0 left-0 logo__contour'/>
+        <MesTechno />
+        <LogoContour className='absolute top-28 left-0 logo__contour'/>
+        <AboutSection/>
       </main>
       
     </>
