@@ -1,7 +1,7 @@
 // components/FallingTextAnimation.jsx
 import React, { useEffect, useState } from 'react';
 
-const FallingTextAnimation = ({ text, delay = 0.15, startDelay = 0 }) => {
+const AnimationFallingHero = ({ text, delay = 0.15, startDelay = 0 }) => {
   const [animationClass, setAnimationClass] = useState('');
 
   useEffect(() => {
@@ -31,4 +31,4 @@ const FallingTextAnimation = ({ text, delay = 0.15, startDelay = 0 }) => {
   );
 };
 
-export default FallingTextAnimation;
+export default AnimationFallingHero;
