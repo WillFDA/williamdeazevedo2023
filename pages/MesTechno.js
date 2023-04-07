@@ -9,8 +9,8 @@ import { TbBrandNextjs } from "react-icons/tb";
 export default function MesTechno() {
   return (
     <>
-      <div className="my-10 container mx-auto">
-        <h1 className="font-Inter font-bold text-4xl text-center mb-10 mt-24">
+      <div className="my-10 mx-auto">
+        <h1 className="font-Inter font-bold text-4xl text-center mb-14 mt-24">
           Mes technologies
         </h1>
         <AnimationMesTechno>
@@ -23,7 +23,7 @@ export default function MesTechno() {
               { component: <FaReact />, color: "#61DBFB" },
               { component: <FaSass />, color: "#CD669A" },
               { component: <SiTailwindcss />, color: "#06B6D4" },
-              { component: <TbBrandNextjs />, color: "#FFFFFF" },
+              { component: <TbBrandNextjs />, color: "#000000" },
             ]}
           />
           <TechnoComponents
@@ -33,20 +33,8 @@ export default function MesTechno() {
             icons={[
               { component: <SiAdobephotoshop />, color: "#4FCCFE" },
               { component: <SiAdobeillustrator />, color: "#FF992D" },
-              { component: <SiFigma />, color: "#FFFFFF" },
+              { component: <SiFigma />, color: "#000000" },
               { component: <SiAdobeaftereffects />, color: "#525cf0" },
-            ]}
-          />
-          <TechnoComponents
-            className="flex-1 h-full"
-            title="Autre"
-            paragraph="D’autres logiciels ou programmes que j’ai utilisé"
-            icons={[
-              { component: <IoLogoCss3 />, color: "#264DE4" },
-              { component: <FaReact />, color: "#61DBFB" },
-              { component: <FaSass />, color: "#CD669A" },
-              { component: <SiTailwindcss />, color: "#06B6D4" },
-              { component: <TbBrandNextjs />, color: "#FFFFFF" },
             ]}
           />
         </AnimationMesTechno>

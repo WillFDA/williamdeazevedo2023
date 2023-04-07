@@ -17,11 +17,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <main className="font-Inter mx-auto my-10">
+      <main className="font-Inter mx-auto my-10 max-w-7xl">
         <Navbar/>
         <HeroSection/>
         <MesTechno />
-        <LogoContour className='absolute top-28 left-0 logo__contour'/>
+        <LogoContour className='absolute top-28 left-0 logo__contour w-screen'/>
         <AboutSection/>
       </main>
       

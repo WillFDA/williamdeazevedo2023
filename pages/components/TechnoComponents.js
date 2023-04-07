@@ -12,7 +12,7 @@ export default function TechnoComponents(props) {
 
   return (
     <motion.div
-      className="p-10 bg-black rounded-3xl flex flex-col min-h-[16rem] justify-between relative overflow-hidden"
+      className="p-10 bg-gray-200 rounded-3xl flex flex-col min-h-[16rem] justify-between relative overflow-hidden"
       whileHover={{ scale: 1.02 }}
     >
       <motion.div
@@ -22,8 +22,8 @@ export default function TechnoComponents(props) {
         whileHover="hover"
       />
       <div className="flex flex-col gap-4 z-10">
-        <h2 className="text-white font-semibold text-xl">{title}</h2>
-        <p className="text-white font-regular text-base">{paragraph}</p>
+        <h2 className="text-gray-800 font-semibold text-xl">{title}</h2>
+        <p className="text-gray-600 font-regular text-base">{paragraph}</p>
       </div>
       <div className="flex justify-start content-end z-10">
         {icons.map((icon, index) => (
