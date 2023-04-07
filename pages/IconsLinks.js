@@ -24,7 +24,7 @@ const iconsData = [
 
 const IconLinks = () => {
   return (
-    <div className="gap-x-5 flex space-x-4">
+    <div className="xl:gap-x-5 sm:gap-x-1 flex space-x-4">
       {iconsData.map(({ IconComponent, href }, index) => (
         <a
           key={index}

@@ -12,7 +12,7 @@ const AnimationFallingHero = ({ text, delay = 0.15, startDelay = 0 }) => {
   const words = text ? text.split(' ') : [];
 
   return (
-    <div className=" text-xl flex-wrap space-x-2 font-bold md:flex xs:text-md md:mt-2 text-center text-md md:text-2xl lg:text-3xl xl:text-6xl sm:text-2xl">
+    <div className=" text-3xl flex-wrap space-x-2 font-bold md:flex xs:text-md md:mt-2 text-center text-md md:text-4xl lg:text-5xl xl:text-6xl sm:text-4xl">
       {words.map((word, i) => (
         <span
           key={i}

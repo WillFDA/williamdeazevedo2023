@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <main className="font-Inter mx-auto my-10 max-w-7xl">
+      <main className="font-Inter px-5 mx-auto my-10 max-w-7xl">
         <Navbar/>
         <HeroSection/>
         <MesTechno />
