@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { FaChevronDown } from "react-icons/fa"
-import LogoAnimation from './animation/LogoAnimated'
+import LogoAnimation from '../animation/LogoAnimated'
 
 export default function Navbar() {
     return (

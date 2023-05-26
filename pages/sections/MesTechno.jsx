@@ -1,6 +1,6 @@
 import React from "react";
-import TechnoComponents from "./components/TechnoComponents";
-import AnimationMesTechno from "./animation/AnimationMesTechno";
+import TechnoComponents from "../components/TechnoComponents";
+import AnimationMesTechno from "../animation/AnimationMesTechno";
 import { IoLogoCss3 } from "react-icons/io";
 import { FaReact, FaSass } from "react-icons/fa";
 import { SiTailwindcss, SiAdobephotoshop, SiAdobeillustrator, SiFigma, SiAdobeaftereffects } from "react-icons/si";
@@ -16,7 +16,7 @@ export default function MesTechno() {
         <AnimationMesTechno>
           <div className="flex flex-col md:flex-row gap-10">
             <TechnoComponents
-              className="flex-1 h-full w-full md:w-auto"
+              className="flex-1 w-full md:w-1/2"
               title="Front-end"
               paragraph="Technologies que j’ai appris au cours de ma formation et en autodidacte."
               icons={[
@@ -28,7 +28,7 @@ export default function MesTechno() {
               ]}
             />
             <TechnoComponents
-              className="flex-1 h-full w-full md:w-auto"
+              className="flex-1 w-full md:w-1/2"
               title="Design"
               paragraph="Toute les applications que j’ai utiliser lors de mes études et stages."
               icons={[

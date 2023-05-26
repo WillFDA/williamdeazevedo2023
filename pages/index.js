@@ -2,10 +2,11 @@ import React from 'react';
 import Head from 'next/head';
 import LogoContour from '../public/LogoContour.svg'
 
-import Navbar from './Navbar';
-import HeroSection from './HeroSection';
-import MesTechno from './MesTechno';
-import AboutSection from './AboutSection';
+import Navbar from './sections/Navbar';
+import HeroSection from './sections/HeroSection';
+import MesTechno from './sections/MesTechno';
+import AboutSection from './sections/AboutSection';
+import MesProjets from './sections/MesProjets';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <MesTechno />
         <LogoContour className='absolute top-28 left-0 logo__contour w-screen'/>
         <AboutSection/>
+        <MesProjets/>
       </main>
       
     </>

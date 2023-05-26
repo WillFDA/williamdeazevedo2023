@@ -2,9 +2,9 @@ import React from "react"
 import {FiGithub, FiMail} from 'react-icons/fi'
 import {FaLinkedinIn} from 'react-icons/fa'
 import {BsTwitter} from "react-icons/bs"
-import AnimatedText from "./animation/AnimationFallingHero"
-import AnimationFallingHero from "./animation/AnimationFallingHero"
-import IconLinks from "./IconsLinks"
+import AnimatedText from "../animation/AnimationFallingHero"
+import AnimationFallingHero from "../animation/AnimationFallingHero"
+import IconLinks from "../IconsLinks"
 function HeroSection() {
     return (
       <section className="max-w-screen-xl mx-auto pt-20 flex flex-col items-center">
