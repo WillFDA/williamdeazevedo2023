@@ -1,0 +1,35 @@
+.animation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: clamp(1.75rem, 4vw, 3.75rem);
+    font-weight: $font-bold;
+
+    &__word {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(-6rem);
+        filter: blur(0.625rem);
+        padding-right: clamp(0.25rem, 2vw, 1rem);
+          
+        &.animate {
+            animation-name: falling;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+        }
+    }
+}
+
+@keyframes falling {
+    0% {
+        opacity: 0;
+        transform: translateY(-6rem);
+        filter: blur(0.625rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
