@@ -25,11 +25,14 @@ const logoVariants = (delay: number) => ({
 export default function Logo() {
   return (
     <motion.svg
-      className="logo"
-      viewBox="0 0 508 286"
-      style={{ enableBackground: 'new 0 0 508 286' }}
-      xmlSpace="preserve"
-    >
+    variants={logoVariants(0.5)}
+    initial="hidden"
+    animate="visible"
+    className="logo"
+    viewBox="0 0 508 286"
+    enableBackground="new 0 0 508 286"
+    xmlSpace="preserve"
+>
       <g>
         <g>
           <motion.polygon
