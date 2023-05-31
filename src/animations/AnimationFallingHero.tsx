@@ -1,7 +1,13 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 
-const AnimationFallingHero = ({ text, delay = 0.15, startDelay = 0 }) => {
+interface AnimationFallingHeroProps {
+  text: string;
+  delay?: number;
+  startDelay?: number;
+}
+
+const AnimationFallingHero: React.FC<AnimationFallingHeroProps> = ({ text, delay = 0.15, startDelay = 0 }) => {
     const [animationClass, setAnimationClass] = useState('');
 
     useEffect(() => {
