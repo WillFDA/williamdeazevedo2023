@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion';
 
-const logoVariants = (delay) => ({
+const logoVariants = (delay: number) => ({
   hidden: {
     scale: 0.5,
     opacity: 0,
