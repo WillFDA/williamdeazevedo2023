@@ -7,9 +7,17 @@ interface TechnologiesIconsProps {
   }
 
   const hexToRGBA = (hex: string, alpha: number): string => {
-    const [r, g, b] = hex.match(/\w\w/g).map((x) => parseInt(x, 16));
+    const match = hex.match(/\w\w/g);
+    
+    if (match === null) {
+      throw new Error(`Invalid hex color: ${hex}`);
+    }
+    
+    const [r, g, b] = match.map((x) => parseInt(x, 16));
+    
     return `rgba(${r}, ${g}, ${b}, ${alpha})`;
   };
+  
   
 
 const TechnologiesIcons = ({ component, color }: TechnologiesIconsProps) => {
