@@ -17,7 +17,7 @@ export default function SectionTechnologies() {
           <div className="mes-techno__content">
             <TechnologiesBox
               title="Front-end"
-              paragraph="Technologies que j’ai appris au cours de ma formation et en autodidacte."
+              paragraph="Technologies que j&apos;ai appris au cours de ma formation et en autodidacte."
               icons={[
                 { component: <FaReact />, color: "#61DBFB" },
                 { component: <FaSass />, color: "#CD669A" },
@@ -27,7 +27,7 @@ export default function SectionTechnologies() {
             />
             <TechnologiesBox
               title="Design"
-              paragraph="Toute les applications que j’ai utiliser lors de mes études et stages."
+              paragraph="Toute les applications que j&apos;ai utiliser lors de mes études et stages."
               icons={[
                 { component: <SiAdobephotoshop />, color: "#4FCCFE" },
                 { component: <SiAdobeillustrator />, color: "#FF992D" },
