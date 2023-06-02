@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import TechnologiesIcons from "./TechnologiesIcons";
 
 interface TechnologiesBoxProps {
-    title: string;
-    paragraph: string;
-    icons: Array<{
-      component: React.ReactNode;
-      color: string;
-    }>;
+  title: string;
+  paragraph: string;
+  icons: Array<{
+    component: React.ReactElement;
+    color: string;
+  }>;
+}
 }
 
 export default function TechnologiesBox({ title, paragraph, icons = [] }: TechnologiesBoxProps) {
