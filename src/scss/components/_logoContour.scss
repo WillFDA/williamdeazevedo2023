@@ -27,4 +27,8 @@
     top: 0; // ou tout autre positionnement que vous souhaitez
     left: 0; // ou tout autre positionnement que vous souhaitez
     z-index: -1; // pour le mettre derrière les autres éléments
+    width: 100%;
+    height: auto;
+    max-width: 100vh;
+    max-height: 100vh;
 }

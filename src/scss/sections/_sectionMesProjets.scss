@@ -1,0 +1,32 @@
+.projects {
+    
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 15rem;
+    .title {
+        color: black;
+        text-align: center;
+        font-size: clamp(1.875rem, 2.5vw, 3.125rem);
+        font-weight: $font-bold;
+    }
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+    display: flex;
+    flex-direction: column;
+}
+
+// .project-box {
+    
+// }
+
+// .project {
+//     &-content {
+
+//     }
+//     &-image {
+        
+//     }
+// }

@@ -6,7 +6,10 @@
       font-weight: bold;
       font-size: clamp(1.875rem, 2.5vw, 3.125rem);
       text-align: center;
-      margin: 3.5rem 0 1.5rem 0;
+      margin: 7rem 0 4rem 0;
+      @include media('small') {
+        margin: 3rem 0 4rem 0;
+      }
     }
   
     &__content {

@@ -27,7 +27,7 @@ export default function SectionTechnologies() {
             />
             <TechnologiesBox
               title="Design"
-              paragraph="Toute les applications que j&apos;ai utiliser lors de mes études et stages."
+              paragraph="Toute les applications que j&apos;ai utilisé lors de mes études et stages."
               icons={[
                 { component: <SiAdobephotoshop />, color: "#4FCCFE" },
                 { component: <SiAdobeillustrator />, color: "#FF992D" },

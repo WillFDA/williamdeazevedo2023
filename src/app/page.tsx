@@ -4,6 +4,7 @@ import Navbar from '@/sections/Navbar';
 import SectionHero from "@/sections/SectionHero";
 import SectionTechnologies from "@/sections/SectionTechnologies";
 import LogoContour from '../components/LogoContour';
+import SectionMesProjets from "@/sections/SectionMesProjets";
 function Page() {
     return (
         <div className="app">
@@ -11,6 +12,7 @@ function Page() {
             <Navbar />
             <SectionHero />
             <SectionTechnologies />
+            <SectionMesProjets />
         </div>
     );
 }
