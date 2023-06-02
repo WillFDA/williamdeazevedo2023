@@ -6,10 +6,11 @@ interface TechnologiesIconsProps {
     color: string;
   }
 
-const hexToRGBA = (hex, alpha) => {
-  const [r, g, b] = hex.match(/\w\w/g).map((x) => parseInt(x, 16));
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-};
+  const hexToRGBA = (hex: string, alpha: number): string => {
+    const [r, g, b] = hex.match(/\w\w/g).map((x) => parseInt(x, 16));
+    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+  };
+  
 
 const TechnologiesIcons = ({ component, color }: TechnologiesIconsProps) => {
   if (!component) return null;
