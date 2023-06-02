@@ -11,7 +11,6 @@ interface TechnologiesBoxProps {
     color: string;
   }>;
 }
-}
 
 export default function TechnologiesBox({ title, paragraph, icons = [] }: TechnologiesBoxProps) {
   return (
