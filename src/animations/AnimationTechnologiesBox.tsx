@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-const AnimationTechnologiesBox = ({ children }) => {
+const AnimationTechnologiesBox = ({ children }: { children: ReactNode }) => {
   const containerVariants = {
     hidden: { opacity: 0, y: -50 },
     visible: {
