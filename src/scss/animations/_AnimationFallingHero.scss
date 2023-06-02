@@ -1,9 +1,12 @@
 .animation {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    font-size: clamp(1.75rem, 4vw, 3.75rem);
+    justify-content: left;
+    font-size: clamp(2rem, 5vw, 3.75rem);
     font-weight: $font-bold;
+    @include media('medium') {
+        justify-content: center;
+    }
 
     &__word {
         display: inline-block;

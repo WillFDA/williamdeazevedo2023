@@ -24,18 +24,20 @@ const iconsData = [
 
 const IconsHero = () => {
   return (
-    <div className="icon-links">
-      {iconsData.map(({ IconComponent, href }, index) => (
-        <a
-          key={index}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="icon-links__item"
-        >
-          <IconComponent className="icon-links__icon" />
-        </a>
-      ))}
+    <div className='icon-container'>
+      <div className="icon-links">
+        {iconsData.map(({ IconComponent, href }, index) => (
+          <a
+            key={index}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-links__item"
+          >
+            <IconComponent className="icon-links__icon" />
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

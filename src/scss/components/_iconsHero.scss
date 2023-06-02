@@ -1,10 +1,15 @@
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+
 .icon-links {
     display: flex;
     gap: 2rem;
     background-color: #EDF2F7;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
     &__item {
       border-radius: 50%;
       display: flex;

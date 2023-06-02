@@ -1,0 +1,25 @@
+.icon-techno-components {
+    width: clamp(1.5rem, 6vw, 4rem);
+    height: clamp(1.5rem, 6vw, 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5rem;
+    flex-wrap: wrap;
+    @include media('medium') {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+    &__icon {
+      width: clamp(1rem, 3vw, 2rem);
+      height: clamp(1rem, 3vw, 2rem);
+      transition: colors 0.3s;
+      @include media('medium') {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+}

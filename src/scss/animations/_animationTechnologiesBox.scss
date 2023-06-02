@@ -1,0 +1,12 @@
+.animation-mes-techno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  
+    &__item {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
+  

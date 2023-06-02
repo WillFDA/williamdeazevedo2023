@@ -1,0 +1,22 @@
+.mes-techno {
+    margin: 2.5rem auto;
+  
+    &__title {
+      font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      font-size: clamp(1.875rem, 2.5vw, 3.125rem);
+      text-align: center;
+      margin: 3.5rem 0 1.5rem 0;
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: row;
+      gap: 2.5rem;
+  
+      @include media('medium') {
+        flex-direction: column;
+      }
+    }
+  }
+  
