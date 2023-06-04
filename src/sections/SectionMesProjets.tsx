@@ -19,8 +19,23 @@ function SectionMesProjets() {
         "SCSS",
       ],
       projectExternalLinks: {
-        github: "",
+        github: "https://github.com/WillFDA/kasa_app",
         externalLink: "https://willfda.github.io/kasa_app/",
+      },
+    },
+    {
+      image: "/ohmyfood.png",
+      projectName: "Oh My Food - Restaurant à la Carte",
+      projectLink: "https://github.com/WillFDA/Projet_4_ohmyfood",
+      projectDescription:
+        "Mon rôle en tant que développeur était de structurer le site avec HTML, de créer des styles visuellement attrayants avec SASS et d'implémenter des animations fluides pour améliorer l'expérience utilisateur.",
+      projectTech: [
+        "HTML",
+        "SCSS",
+      ],
+      projectExternalLinks: {
+        github: "https://github.com/WillFDA/Projet_4_ohmyfood",
+        externalLink: "https://willfda.github.io/Projet_4_ohmyfood/",
       },
     },
   ];
@@ -64,17 +79,46 @@ function SectionMesProjets() {
               >
                 <div className="project-box">
                     <div className="project-content">
-
+                      <div className="project-content-text">
+                        <h3 className="project-title">{projectName}</h3>
+                        <div className="project-description">
+                          <p>
+                            {projectDescription}
+                          </p>
+                        </div>
+                        <div className="project-links">
+                          <Link href={projectExternalLinks.github}>
+                            <FiGithub />
+                          </Link>
+                          <Link href={projectExternalLinks.externalLink}>
+                            <FiExternalLink />
+                          </Link>
+                        </div>
+                      </div>
+                      <ul className="project-tech">
+                        {projectTech.map((tech, index) => {
+                          return <li key={index}>{tech}</li>
+                        })}
+                      </ul>
+                        
                     </div>
-                    <div className="project-image">
-                        <Image
-                            src={image}
-                            alt={projectName}
-                            width={600}
-                            height={300}
-                        />
+                    <div className="img-container">
+                        <Link className="link-img" href={projectLink} alt={'Redirection vers le github pages du projet'}>
+                        <div className="overlay">
+                          <span className="overlay-icon">
+                            <FiExternalLink />
+                          </span>
+                        </div>
+                            <Image
+                                src={image}
+                                alt={projectName}
+                                width={500}
+                                height={300}
+                                style={{objectFit: 'cover'}}
+                            />
+                        </Link>
+                      </div>
                     </div>
-                </div>
               </motion.div>
             );
           }
