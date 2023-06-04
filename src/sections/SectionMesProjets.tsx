@@ -103,7 +103,7 @@ function SectionMesProjets() {
                         
                     </div>
                     <div className="img-container">
-                        <Link className="link-img" href={projectLink} alt={'Redirection vers le github pages du projet'}>
+                        <Link className="link-img" href={projectLink}>
                         <div className="overlay">
                           <span className="overlay-icon">
                             <FiExternalLink />
