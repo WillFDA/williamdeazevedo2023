@@ -34,10 +34,15 @@
         font-size: clamp(1.2rem, 2vw, 1.6rem);
         
         @include media('medium') {
+            margin: 1rem auto 1rem;
             margin-top: 1rem;
             text-align: center;
-            width: 100%;
+            width: 90%;
             padding: 0 3rem;
+            line-height: 1.8rem;
+        }
+        @include media('small') {
+          padding: 0rem;
         }
     }
 }
@@ -52,8 +57,8 @@
 
 .blob {
   position: relative;
-  width: clamp(170px, 30vw, 300px);
-  height: clamp(170px, 30vw, 300px);
+  width: clamp(200px, 30vw, 350px);
+  height: clamp(200px, 30vw, 350px);
   overflow: hidden;
   border-radius: 50%;
   animation: fadeIn 2s ease-in;

@@ -5,6 +5,7 @@ import SectionHero from "@/sections/SectionHero";
 import SectionTechnologies from "@/sections/SectionTechnologies";
 import LogoContour from '../components/LogoContour';
 import SectionMesProjets from "@/sections/SectionMesProjets";
+import SectionAPropos from "@/sections/SectionAPropos";
 function Page() {
     return (
         <div className="app">
@@ -13,6 +14,7 @@ function Page() {
             <SectionHero />
             <SectionTechnologies />
             <SectionMesProjets />
+            <SectionAPropos />
         </div>
     );
 }

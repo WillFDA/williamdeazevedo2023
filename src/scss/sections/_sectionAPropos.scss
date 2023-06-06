@@ -1,0 +1,39 @@
+.about {
+    max-width: 1240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    &-box {
+        display: flex;
+        gap: 2rem;
+    }
+    &-title {
+        font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      font-size: clamp(1.875rem, 2.5vw, 3.125rem);
+      text-align: center;
+      margin: 7rem 0 4rem 0;
+    }
+}
+
+.about-container {
+    display: flex;
+    
+    &-list {
+    }
+
+    &-list-item {
+        background-color: transparent;
+        padding: 0.5rem 1.5rem;
+        border: none;          /* Ajouté */
+        outline: none;
+        transition: 0.3s ease;
+        span {
+            font-size: 1rem;
+        }
+        &:hover {
+            background-color: var(--darkerlight-gray-background);
+        }
+    }
+}

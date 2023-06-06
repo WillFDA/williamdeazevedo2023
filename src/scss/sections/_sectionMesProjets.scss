@@ -1,18 +1,20 @@
 .projects {
-    max-width: 1000px;
+    max-width: 1240px;
     margin: auto;
     margin-top: 15rem;
     .title {
-      color: black;
-      text-align: center;
-      font-size: clamp(1.875rem, 2.5vw, 3.125rem);
-      font-weight: $font-bold;
-      margin-bottom: 2rem;
+      h2 {
+        color: black;
+        text-align: center;
+        font-size: clamp(1.875rem, 2.5vw, 3.125rem);
+        font-weight: $font-bold;
+      }
+      margin-bottom: 4rem;
     }
     &-container {
       display: flex;
       flex-direction: column;
-      gap: 5rem;
+      gap: 3rem;
     }
     display: flex;
     flex-direction: column;
@@ -22,11 +24,16 @@
     display: flex;
     flex: 1;
     position: relative;
+    flex-direction: row;
+    justify-content: space-between;
     border: 1px solid var(--darkerlight-gray-background);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     gap: 1rem;
-  
+    
+    @include media('extra-large') {
+      padding: 1rem;
+    }
     @include media('medium') {
       flex-direction: column;
       width: 100%;
@@ -42,6 +49,8 @@
       font-size: 1rem;
       font-weight: $font-regular;
       color: var(--medium-gray-background);
+      line-height: 1.4rem;
+
     }
     &-content {
       flex-basis: 50%;

@@ -23,8 +23,8 @@ function SectionHero() {
             <Image
             src="/william.jpg" 
             alt="Photo de William vue de face et un font végétale verdoyant" 
-            width={500}
-            height={500} 
+            width={400}
+            height={400} 
             style={{ objectFit: 'cover' }}
             />
           </div>
