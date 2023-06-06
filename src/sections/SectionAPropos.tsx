@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import {motion} from 'framer-motion';
 
+tabIndex
 const SectionAPropos = () => {
   return (
     <section className='about'>
@@ -40,7 +41,7 @@ const SectionAPropos = () => {
         </div>
         <div className='about-container'>
             <div className="about-container-list">
-                <button className='about-container-list-item' id='tab-0' tabIndex="0">
+                <button className='about-container-list-item' id='tab-0' tabIndex={0}>
                     <span>2019</span>
                 </button> 
                 <div className="about-container-list-highlight"></div>
