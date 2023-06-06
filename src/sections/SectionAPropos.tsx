@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 import {motion} from 'framer-motion';
 
-tabIndex
 const SectionAPropos = () => {
   return (
     <section className='about'>
