@@ -43,17 +43,17 @@ const SectionAPropos = () => {
           <div className='about-me'>
             <h3>Mon histoire</h3>
             <div className="about-me-paragraph">
-            <p>Passionné par l'informatique et la créativité visuelle depuis mon jeune âge,
-                j'ai commencé à explorer l'univers de l'infographie à seulement 11 ans.
+            <p>Passionné par l&apos;informatique et la créativité visuelle depuis mon jeune âge,
+                j&apos;ai commencé à explorer l&apos;univers de l&apos;infographie à seulement 11 ans.
                 </p>
                 <p>Mon voyage a commencé par la modélisation 3D, le montage vidéo et le traitement d'image pour 
-                créer des affiches et d'autres matériaux graphiques. J'ai ensuite approfondi mes connaissances 
+                créer des affiches et d&apos;autres matériaux graphiques. J&apos;ai ensuite approfondi mes connaissances 
                 dans ces domaines en poursuivant des études universitaires en impression et plurimédia. </p>
 
-                <p>Cependant, je n'ai jamais cessé d'être intrigué par le potentiel de l'informatique. 
-                C'est pourquoi en 2022, j'ai décidé de m'orienter vers le développement web, 
-                en commençant une formation d'intégrateur web. Aujourd'hui, je suis fier de dire que je suis diplômé,
-                avec plusieurs mois d'expérience dans le domaine, prêt à apporter ma passion et mes compétences à de nouveaux défis et projets.
+                <p>Cependant, je n&apos;ai jamais cessé d'être intrigué par le potentiel de l&apos;informatique. 
+                C&apos;est pourquoi en 2022, j&apos;ai décidé de m&apos;orienter vers le développement web, 
+                en commençant une formation d'intégrateur web. Aujourd&apos;hui, je suis fier de dire que je suis diplômé,
+                avec plusieurs mois d&apos;expérience dans le domaine, prêt à apporter ma passion et mes compétences à de nouveaux défis et projets.
                  </p>
               </div>
           </div>
