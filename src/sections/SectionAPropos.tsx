@@ -50,7 +50,7 @@ const SectionAPropos = () => {
   créer des affiches et d&apos;autres matériaux graphiques. J&apos;ai ensuite approfondi mes connaissances 
   dans ces domaines en poursuivant des études universitaires en impression et plurimédia. </p>
 
-  <p>Cependant, je n&apos;ai jamais cessé d'être intrigué par le potentiel de l&apos;informatique. 
+  <p>Cependant, je n&apos;ai jamais cessé d&apos;être intrigué par le potentiel de l&apos;informatique. 
   C&apos;est pourquoi en 2022, j&apos;ai décidé de m&apos;orienter vers le développement web, 
   en commençant une formation d&apos;intégrateur web. Aujourd&apos;hui, je suis fier de dire que je suis diplômé,
   avec plusieurs mois d&apos;expérience dans le domaine, prêt à apporter ma passion et mes compétences à de nouveaux défis et projets.
