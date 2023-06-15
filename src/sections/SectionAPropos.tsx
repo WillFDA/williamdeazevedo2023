@@ -46,11 +46,11 @@ const SectionAPropos = () => {
   <p>Passionné par l&apos;informatique et la créativité visuelle depuis mon jeune âge,
   j&apos;ai commencé à explorer l&apos;univers de l&apos;infographie à seulement 11 ans.
   </p>
-  <p>Mon voyage a commencé par la modélisation 3D, le montage vidéo et le traitement d&apos;image pour 
+  <p className="paragraph_notessential">Mon voyage a commencé par la modélisation 3D, le montage vidéo et le traitement d&apos;image pour 
   créer des affiches et d&apos;autres matériaux graphiques. J&apos;ai ensuite approfondi mes connaissances 
   dans ces domaines en poursuivant des études universitaires en impression et plurimédia. </p>
 
-  <p>Cependant, je n&apos;ai jamais cessé d&apos;être intrigué par le potentiel de l&apos;informatique. 
+  <p>Je n&apos;ai jamais cessé d&apos;être intrigué par le potentiel de l&apos;informatique. 
   C&apos;est pourquoi en 2022, j&apos;ai décidé de m&apos;orienter vers le développement web, 
   en commençant une formation d&apos;intégrateur web. Aujourd&apos;hui, je suis fier de dire que je suis diplômé,
   avec plusieurs mois d&apos;expérience dans le domaine, prêt à apporter ma passion et mes compétences à de nouveaux défis et projets.
