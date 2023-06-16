@@ -58,13 +58,18 @@
         margin-top: 1rem;
         min-height: 400px;
         @include media('large') {
-            width: 20%;
             margin: auto;
-            min-height: 150px;
-            border-radius: 0.3rem;
+            min-height: 400px;
+            min-width: 400px;
         }
         @include media('medium') {
-            width: 30%;
+            min-width: 300px;
+            min-height: 300px;
+            margin: auto;
+        }
+        @include media('small') {
+            min-width: 150px;
+            min-height: 150px;
         }
     }
 }

@@ -1,37 +1,82 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem;
-    max-width: 1240px;
-    margin: auto;
-    &__menu-container {
-      position: relative; 
-    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  max-width: 1240px;
+  margin: auto;
 
-    &__menu-button {
-        margin: 0.25rem;
-        padding: 0.75rem 1rem;
-        border-radius: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #F3F4F6;
-        background-color: #F3F4F6;
-        font-size:var(--tbase);
+  &__menu-container {
+    position: relative; 
+  }
 
+  &__menu-button {
+    cursor: pointer;
+      margin: 0.25rem;
+      padding: 0.75rem 1rem;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #F3F4F6;
+      background-color: #F3F4F6;
+      font-size:var(--tbase);
+      transition: transform 0.2s ease;
 
-        &:hover {
-            background-color: #E5E7EB; // correspond à hover:bg-gray-200
-            border-color: #E5E7EB; // correspond à hover:border-gray-100
-        }
-          &:active {
-            border-color: #D1D5DB; // correspond à active:border-gray-300
-        }
-    }
-    
-    &__menu-icon {
-        height: 1rem;
-        margin-left: 0.5rem;
+      &:hover {
+          background-color: #E5E7EB; // correspond à hover:bg-gray-200
+          border-color: #E5E7EB; // correspond à hover:border-gray-100
+          transform: scale(1.1);  // Agrandit l'élément de 10% lors du survol
+      }
+      &:active {
+          border-color: #D1D5DB; // correspond à active:border-gray-300
+          transform: scale(1);  // Réduit l'élément à sa taille originale lors du clic
       }
   }
+
+  &__menu-icon {
+      height: 1rem;
+      margin-left: 0.5rem;
+  }
+}
+
+.nav_links {
+  z-index: 10;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 1rem;
+  white-space: nowrap;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;  // Initialise l'opacité à 0
+  transform: translateY(-10%);  // Déplace légèrement le menu vers le haut
+  animation: fadeInDown 0.5s forwards;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      padding: 0.5rem 0.8rem;
+      border-radius: 0.5rem;
+      list-style-type: none;
+      li {
+        cursor: pointer;
+      }
+      &:hover {
+        background-color: #E5E7EB;  // Ajoute un fond gris lors du survol
+      }
+    }
+  }
+}
+
+@keyframes fadeInDown {
+  100% {
+    opacity: 1;  // Fait passer l'opacité à 1
+    transform: translateY(0);  // Ramène le menu à sa position originale
+  }
+}

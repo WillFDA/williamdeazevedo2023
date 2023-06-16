@@ -11,7 +11,7 @@ import {motion} from 'framer-motion';
 export default function SectionTechnologies() {
   return (
     <>
-      <div className="mes-techno">
+      <div id="technos" className="mes-techno">
       <motion.div
                 initial="hidden"
                 whileInView="visible"

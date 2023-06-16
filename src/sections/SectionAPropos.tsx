@@ -6,7 +6,7 @@ import SchoolComponent from "@/components/SchoolComponent";
 
 const SectionAPropos = () => {
   return (
-    <section className="about">
+    <section id="abouts" className="about">
         <motion.div
       initial="hidden"
       whileInView="visible"
@@ -41,7 +41,7 @@ const SectionAPropos = () => {
           </div>
         <aside className="about-aside">
           <div className="about-me">
-            <h3>Mon histoire</h3>
+            <h4>Mon histoire</h4>
             <div className="about-me-paragraph">
   <p>Passionné par l&apos;informatique et la créativité visuelle depuis mon jeune âge,
   j&apos;ai commencé à explorer l&apos;univers de l&apos;infographie à seulement 11 ans.
