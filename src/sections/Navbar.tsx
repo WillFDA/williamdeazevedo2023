@@ -7,7 +7,7 @@ import { FaChevronDown, FaTimes } from "react-icons/fa"
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
 
-    function handleNavMenuClick(e: MouseEvent<HTMLButtonElement>) {
+    function handleNavMenuClick(e: React.MouseEvent<HTMLButtonElement>) {
         e.preventDefault();
         setIsOpen(!isOpen)
     }
