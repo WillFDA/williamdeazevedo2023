@@ -27,7 +27,7 @@ function Navbar() {
                             to="technos"
                             spy={true}
                             smooth={true}
-                            offset={0}
+                            offset={-70}
                             duration={500}
                         >
                             <li className="nav_links_li">Mes Technologies</li>

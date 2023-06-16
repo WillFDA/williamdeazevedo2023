@@ -2,6 +2,12 @@
     max-width: 1240px;
     margin: auto;
     margin-top: 15rem;
+    @include media('large') {
+      margin-top: 10rem;
+    }
+    @include media('medium') {
+      margin-top: 5rem;
+    }
     .title {
       h2 {
         color: black;

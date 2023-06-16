@@ -4,12 +4,24 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
+    h3 {
+        @include media('medium') {
+            margin-top: 4rem;
+        }
+    }
     &-me {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
         padding: 1rem 4rem 1rem 0rem;
+        h4 {
+            align-self: flex-start;
+            font-size: 1.5rem;
+            @include media('large') {
+                align-self: center;
+            }
+        }
         @include media('large') {
             margin: auto;
             width: 100%;
@@ -47,6 +59,7 @@
       font-size: clamp(1.875rem, 2.5vw, 3.125rem);
       text-align: center;
       margin: 7rem 0 4rem 0;
+
     }
     &-image {
         position: relative;
