@@ -27,7 +27,7 @@ function Navbar() {
                             to="technos"
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            offset={0}
                             duration={500}
                         >
                             <li className="nav_links_li">Mes Technologies</li>
@@ -47,7 +47,7 @@ function Navbar() {
                             to="abouts"
                             spy={true}
                             smooth={true}
-                            offset={-70}
+                            offset={0}
                             duration={500}
                         >
                             <li className="nav_links_li">A propos de moi</li>

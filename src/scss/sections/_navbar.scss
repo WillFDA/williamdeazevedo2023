@@ -53,6 +53,7 @@
   opacity: 0;  // Initialise l'opacité à 0
   transform: translateY(-10%);  // Déplace légèrement le menu vers le haut
   animation: fadeInDown 0.5s forwards;
+  right: 0;
   ul {
     display: flex;
     flex-direction: column;
