@@ -50,8 +50,8 @@ const SchoolComponent = () => {
                       <p className="about-content-subtitle">Septembre 2022 - Juin 2023</p>
                       <div>
                         <ul className="about-content-ul">
-                          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, nemo reprehenderit hic laboriosam iusto dicta.</li>
-                          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium nulla dolor?</li>
+                          <li>Maîtrise des langages de programmation essentiels (HTML, CSS, SASS, JavaScript, React & Redux) et des outils de développement web (Git & GitHub, responsive design).</li>
+                          <li>Expérience pratique dans la création d&apos;applications web complètes et réactives, l&apos;optimisation de sites web existants et la gestion de projets web de A à Z.</li>
                           <li>Lorem ipsum dolor sit amet.</li>
                         </ul>
                       </div>
@@ -64,13 +64,13 @@ const SchoolComponent = () => {
                     transition={{ duration: 0.5 }}
                     className="about-content"
                   >
-                    <h3 className="about-content-title">Web design <a id="icanschool" className="about-content-link" target="_blank" href="https://openclassrooms.com/fr/paths/594-integrateur-web">@ICAN</a></h3>
+                    <h3 className="about-content-title">Bachelor Web & Communication Visuelle <a id="icanschool" className="about-content-link" target="_blank" href="https://www.ican-design.fr/formation/bachelor-web-digital.html">@ICAN</a></h3>
                     <p className="about-content-subtitle">Septembre 2019 - Janvier 2020</p>
                     <div>
                       <ul className="about-content-ul">
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, nemo reprehenderit hic laboriosam iusto dicta.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium nulla dolor?</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>J&apos;ai débuté une formation en Web & Communication Visuelle, ce qui m&apos;a permis de commencer à découvrir le monde du web et de développer une première compréhension des fondamentaux du web design et de la conception graphique.</li>
+                        <li>J&apos;ai acquis une certaine culture de l&apos;image, en explorant les principes du design graphique, les fondamentaux de l&apos;ergonomie et l&apos;introduction à la sémiologie.</li>
+                        <li>J&apos;ai commencé à maîtriser des outils tels que Adobe Photoshop et Illustrator, ainsi que les langages de programmation HTML/CSS pour le développement web.</li>
                       </ul>
                     </div>
                     </motion.div>
@@ -86,9 +86,9 @@ const SchoolComponent = () => {
                     <p className="about-content-subtitle">Septembre 2017 - Aout 2019</p>
                     <div>
                       <ul className="about-content-ul">
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, nemo reprehenderit hic laboriosam iusto dicta.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium nulla dolor?</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>J&apos;ai un BTS en Études et Réalisation d&apos;un Projet de Communication, focalisé sur les produits graphiques et imprimés.</li>
+                        <li>J&apos;ai appris à analyser et mettre en œuvre des moyens techniques pour répondre aux exigences du client, tout en respectant des critères spécifiques.</li>
+                        <li>J&apos;ai développé des compétences relationnelles, agissant comme l&apos;interlocuteur principal des clients et collègues.</li>
                       </ul>
                     </div>
                     </motion.div>
@@ -104,9 +104,9 @@ const SchoolComponent = () => {
                     <p className="about-content-subtitle">Septembre 2017 - Septembre 2014</p>
                     <div>
                       <ul className="about-content-ul">
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, nemo reprehenderit hic laboriosam iusto dicta.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium nulla dolor?</li>
-                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>J&apos;ai complété ma formation avec l&apos;option graphique du baccalauréat professionnel en Réalisation d&apos;un Produit Imprimé et Plurimédia. Cela a permis d&apos;approfondir ma compréhension et ma compétence dans la création de projets graphiques sur divers supports de communication imprimés et multimédias.</li>
+                        <li>Développement d&apos;un esprit méthodique et organisé, renforcé par des stages pratiques en entreprise.</li>
+                        <li>Préparation à divers rôles dans le domaine graphique, y compris opérateur PAO, infographiste et intégrateur WEB.</li>
                       </ul>
                     </div>
                     </motion.div>
