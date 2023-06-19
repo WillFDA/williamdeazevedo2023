@@ -52,7 +52,6 @@ const SchoolComponent = () => {
                         <ul className="about-content-ul">
                           <li>Maîtrise des langages de programmation essentiels (HTML, CSS, SASS, JavaScript, React & Redux) et des outils de développement web (Git & GitHub, responsive design).</li>
                           <li>Expérience pratique dans la création d&apos;applications web complètes et réactives, l&apos;optimisation de sites web existants et la gestion de projets web de A à Z.</li>
-                          <li>Lorem ipsum dolor sit amet.</li>
                         </ul>
                       </div>
                   </motion.div>
