@@ -1,59 +1,92 @@
 .hero__section__aside {
-    display: flex;
-    // background-color: red;
-    max-width: 1240px;
-    margin: auto;
-    padding-top: 8rem;
-    @include media('medium') {
-      flex-direction: column;
-      gap: 2rem;
-      padding-top: 3rem;
-    }
-    @include media('small') {
-      padding-top: 2rem;
-    }
+  display: flex;
+  // background-color: red;
+  max-width: 1240px;
+  margin: auto;
+  padding-top: 8rem;
+  @include media("medium") {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+  @include media("small") {
+    padding-top: 2rem;
+  }
 }
 
 .hero {
-    // background-color: blue;
-    margin: 0 auto;
-    flex: 0.7; // Ici, on attribue 70% de l'espace disponible à l'élément .hero
-    flex-direction: column;
-    align-items: left;
-
-    @include media('medium') {
-      align-items: center;
-      justify-content: center;
+  &__button {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 1rem 1.4rem;
+    border-radius: 0.5rem;
+    background: #edf2f7;
+    color: #797a7b;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    max-width: fit-content;
+    @include media("medium") {
       margin: auto;
+    }
+    span {
+      font-weight: 500;
+    }
+    svg {
+      margin-left: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    &:hover {
+      color: white;
+      background-color: black;
+      svg {
+        transform: translateX(5px);
+      }
+    }
+  }
+  // background-color: blue;
+  margin: 0 auto;
+  flex: 0.7; // Ici, on attribue 70% de l'espace disponible à l'élément .hero
+  flex-direction: column;
+  align-items: left;
+
+  @include media("medium") {
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+  &__text {
+    text-align: left;
+    margin-top: 2rem;
+    width: 80%;
+    color: #b8b8b8;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    margin-bottom: 2rem;
+
+    @include media("medium") {
+      margin: 1rem auto 1rem;
+      margin-top: 1rem;
       text-align: center;
+      width: 90%;
+      padding: 0 3rem;
+      line-height: 1.8rem;
     }
-    &__text {
-        text-align: left;
-        margin-top: 2rem;
-        width: 80%;
-        color: #B8B8B8;
-        font-size: clamp(1.2rem, 2vw, 1.6rem);
-        
-        @include media('medium') {
-            margin: 1rem auto 1rem;
-            margin-top: 1rem;
-            text-align: center;
-            width: 90%;
-            padding: 0 3rem;
-            line-height: 1.8rem;
-        }
-        @include media('small') {
-          padding: 0rem;
-        }
+    @include media("small") {
+      padding: 0rem;
     }
+  }
 }
 
 .aside {
-    display: flex;
-    flex: 0.4; // Ici, on attribue 30% de l'espace disponible à l'élément .aside
-    // background-color: green;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex: 0.4; // Ici, on attribue 30% de l'espace disponible à l'élément .aside
+  // background-color: green;
+  align-items: center;
+  justify-content: center;
 }
 
 .blob {
@@ -71,23 +104,23 @@
     object-fit: cover;
   }
 }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
 
 .hero--container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5rem; 
-  @include media('medium') {
+  padding-bottom: 5rem;
+  @include media("medium") {
     padding-bottom: 3rem;
   }
 }
