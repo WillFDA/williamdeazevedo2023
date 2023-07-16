@@ -8,8 +8,8 @@ const CVButton = () => {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}
-      className="hero__button"
-      target="_blank"
+      className="CV__button"
+      download
       href="/CV.pdf"
     >
       <span>Voir mon CV</span>

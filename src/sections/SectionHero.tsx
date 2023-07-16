@@ -14,7 +14,8 @@ function SectionHero() {
             <AnimationFallingHero text="Salut, moi c'est" />
             <AnimationFallingHero
               startDelay={0.5}
-              text="William De Azevedo !"
+              nameclass="hero_title-color"
+              text="William De Azevedo"
             />
             <AnimationFallingHero
               startDelay={0.7}

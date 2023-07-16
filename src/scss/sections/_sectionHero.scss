@@ -15,38 +15,6 @@
 }
 
 .hero {
-  &__button {
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.2s;
-    padding: 1rem 1.4rem;
-    border-radius: 0.5rem;
-    background: #edf2f7;
-    color: #797a7b;
-    border: 1px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    max-width: fit-content;
-    @include media("medium") {
-      margin: auto;
-    }
-    span {
-      font-weight: 500;
-    }
-    svg {
-      margin-left: 10px;
-      transition: transform 0.3s ease-in-out;
-    }
-    &:hover {
-      color: white;
-      background-color: black;
-      svg {
-        transform: translateX(5px);
-      }
-    }
-  }
   // background-color: blue;
   margin: 0 auto;
   flex: 0.7; // Ici, on attribue 70% de l'espace disponible à l'élément .hero
@@ -62,9 +30,9 @@
   &__text {
     text-align: left;
     margin-top: 2rem;
-    width: 80%;
-    color: #b8b8b8;
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    width: 90%;
+    color: black;
+    font-size: clamp(1rem, 2vw, 1.4rem);
     margin-bottom: 2rem;
 
     @include media("medium") {
@@ -129,4 +97,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hero_title-color {
+  color: #4146ff;
 }
