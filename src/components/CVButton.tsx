@@ -10,7 +10,7 @@ const CVButton = () => {
       whileTap={{ scale: 0.9 }}
       className="CV__button"
       download
-      href="/CV.pdf"
+      href="/CV_WILLIAM_DE_AZEVEDO.pdf"
     >
       <span>Voir mon CV</span>
       <FaAngleRight />
