@@ -9,9 +9,24 @@ import { motion } from "framer-motion";
 function SectionMesProjets() {
   const projectsData = [
     {
+      image: "/singlepageportfolio.png",
+      projectName: "Single page design Portfolio",
+      projectLink: "https://single-page-design-portfolio-william.netlify.app/",
+      projectDescription:
+        "Ce projet, créé avec Next.js et Tailwind CSS, met en valeur les performances et l'optimisation d'image de Next.js. J'ai relevé le défi de Front End Mentor en alignant précisément les blocs du Hero et en gérant un slider. Le site est responsive et fidèle au design Figma fourni.",
+      projectTech: ["Next JS", "Tailwind CSS"],
+      projectExternalLinks: {
+        github: "https://github.com/WillFDA/single-page-design-portfolio",
+        externalLink:
+          "https://single-page-design-portfolio-william.netlify.app/",
+      },
+      isNew: true,
+      frontendmentor: true,
+    },
+    {
       image: "/kasa_app.png",
       projectName: "Kasa App - Site d'Agence Immobilière",
-      projectLink: "https://github.com/WillFDA/kasa_app",
+      projectLink: "https://willfda.github.io/kasa_app/",
       projectDescription:
         "En utilisant la puissance de React et la flexibilité du SCSS, j'ai créé un site web innovant pour une agence immobilière appelée Kasa App lors de mon cursus sur Openclassrooms.",
       projectTech: ["React", "SCSS"],
@@ -19,11 +34,13 @@ function SectionMesProjets() {
         github: "https://github.com/WillFDA/kasa_app",
         externalLink: "https://willfda.github.io/kasa_app/",
       },
+      isNew: false,
+      frontendmentor: false,
     },
     {
       image: "/ohmyfood.png",
       projectName: "Oh My Food - Restaurant à la Carte",
-      projectLink: "https://github.com/WillFDA/Projet_4_ohmyfood",
+      projectLink: "https://willfda.github.io/Projet_4_ohmyfood/",
       projectDescription:
         "Mon rôle en tant que développeur était de structurer le site avec HTML, de créer des styles visuellement attrayants avec SASS et d'implémenter des animations fluides pour améliorer l'expérience utilisateur.",
       projectTech: ["HTML", "SCSS"],
@@ -31,6 +48,8 @@ function SectionMesProjets() {
         github: "https://github.com/WillFDA/Projet_4_ohmyfood",
         externalLink: "https://willfda.github.io/Projet_4_ohmyfood/",
       },
+      isNew: false,
+      frontendmentor: false,
     },
   ];
   return (
@@ -57,6 +76,8 @@ function SectionMesProjets() {
             projectExternalLinks,
             projectName,
             projectTech,
+            isNew,
+            frontendmentor,
           }) => {
             return (
               <motion.div
@@ -94,6 +115,18 @@ function SectionMesProjets() {
                     </ul>
                   </div>
                   <div className="img-container">
+                    {isNew || frontendmentor ? (
+                      <div className="img-container-box">
+                        {isNew ? (
+                          <span className="img-container-new">Nouveau</span>
+                        ) : null}
+                        {frontendmentor ? (
+                          <span className="img-container-mentor">
+                            Front End Mentor
+                          </span>
+                        ) : null}
+                      </div>
+                    ) : null}
                     <Link className="link-img" href={projectLink}>
                       <div className="overlay">
                         <span className="overlay-icon">
