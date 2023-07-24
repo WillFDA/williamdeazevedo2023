@@ -100,10 +100,16 @@ function SectionMesProjets() {
                         <p>{projectDescription}</p>
                       </div>
                       <div className="project-links">
-                        <Link href={projectExternalLinks.github}>
+                        <Link
+                          href={projectExternalLinks.github}
+                          target="_blank"
+                        >
                           <FiGithub />
                         </Link>
-                        <Link href={projectExternalLinks.externalLink}>
+                        <Link
+                          href={projectExternalLinks.externalLink}
+                          target="_blank"
+                        >
                           <FiExternalLink />
                         </Link>
                       </div>
