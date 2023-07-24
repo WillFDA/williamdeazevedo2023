@@ -127,7 +127,11 @@ function SectionMesProjets() {
                         ) : null}
                       </div>
                     ) : null}
-                    <Link className="link-img" href={projectLink}>
+                    <Link
+                      className="link-img"
+                      href={projectLink}
+                      target="_blank"
+                    >
                       <div className="overlay">
                         <span className="overlay-icon">
                           <FiExternalLink />
