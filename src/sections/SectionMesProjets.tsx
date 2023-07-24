@@ -14,7 +14,7 @@ function SectionMesProjets() {
       projectLink: "https://single-page-design-portfolio-william.netlify.app/",
       projectDescription:
         "Ce projet, créé avec Next.js et Tailwind CSS, met en valeur les performances et l'optimisation d'image de Next.js. J'ai relevé le défi de Front End Mentor en alignant précisément les blocs du Hero et en gérant un slider. Le site est responsive et fidèle au design Figma fourni.",
-      projectTech: ["Next JS", "Tailwind CSS"],
+      projectTech: ["Next JS", "Tailwind CSS", "SwiperJS"],
       projectExternalLinks: {
         github: "https://github.com/WillFDA/single-page-design-portfolio",
         externalLink:
