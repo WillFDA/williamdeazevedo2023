@@ -9,6 +9,19 @@ import { motion } from "framer-motion";
 function SectionMesProjets() {
   const projectsData = [
     {
+      image: "/kanban.jpg",
+      projectName: "Kanban task management web app",
+      projectLink: "https://kanban-william.netlify.app/",
+      projectDescription: "Ce projet est en cours ...",
+      projectTech: ["Next JS", "Tailwind CSS", "TypeScript", "Redux"],
+      projectExternalLinks: {
+        github: "https://github.com/WillFDA/kanban-william",
+        externalLink: "https://kanban-william.netlify.app/",
+      },
+      isNew: true,
+      frontendmentor: true,
+    },
+    {
       image: "/singlepageportfolio.png",
       projectName: "Single page design Portfolio",
       projectLink: "https://single-page-design-portfolio-william.netlify.app/",
