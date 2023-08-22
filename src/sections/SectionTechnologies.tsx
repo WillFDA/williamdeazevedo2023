@@ -51,8 +51,8 @@ export default function SectionTechnologies() {
                 { component: <FaReact />, color: "#61DBFB" },
                 { component: <SiTypescript />, color: "#06B6D4" },
                 { component: <TbBrandNextjs />, color: "#000000" },
-                { component: <SiRedux />, color: "##764ABC" },
-                { component: <SiTailwindcss />, color: "##38BDF8" },
+                { component: <SiRedux />, color: "#764ABC" },
+                { component: <SiTailwindcss />, color: "#38BDF8" },
               ]}
             />
             <TechnologiesBox
